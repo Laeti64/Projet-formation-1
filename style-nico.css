@@ -1,0 +1,296 @@
+/*---------variables css------------------*/
+:root {
+  --text-on-image-color: #f2f2f2;
+  --text-on-image-border: black 0.1px;
+  --transparency: 0.4;
+  --font-familly-on-pictures: "Sorts Mill Goudy", sans-serif;
+  /* --font-familly-on-pictures: "Roboto", sans-serif; */
+}
+/*---------encadrement du texte en blanc------------------*/
+.white-border {
+  color: var(--text-on-image-color);
+  /* -webkit-text-stroke: var(--text-on-image-border); */
+}
+/*---------Page 1-----------------------------------------*/
+.page-1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: block;
+}
+
+.img-first-page {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(80%);
+}
+
+#fleche-bas {
+  transform: rotate(90deg);
+  filter: invert(1);
+  position: relative;
+  top: 80vh;
+  left: 33vw;
+  height: 10rem;
+  width: 5rem;
+}
+/*---------position texte & logo page d'accueil------------*/
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 100vw;
+  max-height: 100vh; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Caption text */
+.text {
+  font-size: 40px;
+  font-family: var(--font-familly-on-pictures);
+  font-weight: bold;
+  position: absolute;
+  top: 50vh;
+  left: 10vw;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot-bar {
+  position: relative;
+  top: 60vh;
+  left: 10vw;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #f2f2f2;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*----------------------images page 2----------------------*/
+.page-2 {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.nav-bar-place {
+  height: 8rem;
+  /* background-color: #f2f2f2; */
+}
+
+/*---contient toutes les vignettes---*/
+.container-photo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/*---parametres vignettes---*/
+.vignette-container {
+  height: 15vh;
+  width: 70%;
+  border-radius: 10px;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.vignette-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 36px;
+  font-family: var(--font-familly-on-pictures);
+  font-weight: bold;
+}
+
+.vignette-photo {
+  top: 0px;
+  left: 0px;
+  height: 15vh;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vignette-photo:hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 15vh;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.1;
+  box-shadow: 5px 5px 15px 5px black;
+  cursor: pointer;
+}
+
+/*-------------scroll--------------------------------------*/
+/* Non traité pour l'instant */
+
+/*-------------Responsive----------------------------------*/
+/* smartphones, touchscreens */
+
+@media screen and (min-width: 800px) {
+  #fleche-bas {
+    transform: rotate(90deg);
+    filter: invert(1);
+    position: relative;
+    top: 60vh;
+    left: 40vw;
+    height: 20rem;
+    width: 10rem;
+  }
+  /* Caption text */
+  .text {
+    font-size: 80px;
+    font-family: var(--font-familly-on-pictures);
+    font-weight: bold;
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-bar {
+    position: relative;
+    top: 65vh;
+    left: 10vw;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 2px;
+    background-color: rgba(242, 242, 242, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #f2f2f2;
+  }
+
+  /*---contient toutes les vignettes---*/
+  .container-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /*---parametres vignettes---*/
+  .vignette-container {
+    height: 25vh;
+    width: 70%;
+    border-radius: 10px;
+    margin: 1rem auto;
+    background-color: #f2f2f2;
+    margin: 1rem auto;
+    position: relative;
+  }
+
+  .vignette-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 48px;
+    font-family: var(--font-familly-on-pictures);
+    font-weight: bold;
+  }
+
+  .vignette-photo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 25vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .vignette-photo:hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 25vh;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.6;
+  }
+}

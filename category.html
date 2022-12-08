@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyages Zen</title>
+    <link rel="stylesheet" href="style-laeti.css" />
+    <link rel="stylesheet" href="style-global.css" />
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+    <header id="headerCategory">
+        <!-- top de page -->
+        <div>
+            <h1 id="categoryTitle"></h1>
+            <img id="topCategoryImg" src="images/categorieZene.jpeg" alt="Image pour voyages zen" />
+        </div>
+        <nav id="menu">
+            <ul class="flex-container-center">
+                <li>
+                    <a href="file://wsl.localhost/Ubuntu/home/nico_unix/projects/project-1/accueil.html"><img
+                            class="logo-main" src="./images/Logos/wild.png" alt="logo-wild-travel-agency" /></a>
+                </li>
+                <div class="logos-container flex-container-center">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/"><img class="logo-facebook"
+                                src="./images/Logos/logoFacebook.png" alt="logo-facebook" /></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com"><img class="logo-instagram"
+                                src="./images/Logos/logoInstagram.png" alt="logo-instagram" /></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.whatsapp.com"><img class="logo-whats-app"
+                                src="./images/Logos/whatsapp.png" alt="logo-whats-app" /></a>
+                    </li>
+                    <li class="logo-sandwitch">
+                        <a class="dropdown-arrow" href="#"><img src="./images/Logos/logo-sandwitch.png"
+                                alt="logo-sandwitch" /></a>
+                        <ul class="sub-menus">
+                            <li>
+                                <a
+                                    href="file://wsl.localhost/Ubuntu/home/nico_unix/projects/project-1/accueil.html">Accueil</a>
+                            </li>
+                            <li><a href="#page-2">Nos catégories de voyages</a></li>
+                            <li>
+                                <a
+                                    href="file://wsl.localhost/Ubuntu/home/nico_unix/projects/project-1/contact.html">Contactez-nous</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="categoryBody">
+        <!--Carrousel-->
+        <img id="categoryImgBody" src="images/categorieZene.jpeg" />
+        <div class="carousel-container">
+            <div class="inner-carousel">
+                <div class="track">
+                    <div class="card-container">
+                        <div class="card card1">
+                            <h2 class="cardTitle">Bora Bora</h2>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card card2">
+                            <h2 class="cardTitle">Japon</h2>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card card3">
+                            <h2 class="cardTitle">Seychelles</h2>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card card4">
+                            <h2 class="cardTitle">Thaïlande</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="nav">
+                    <button class="prev"><img id="left" src="images/Logos/fleche.png" /></button>
+                    <button class="next"><img id="right" src="images/Logos/fleche.png" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="travelContainer"></div>
+        <div class="btnDiv"></div>
+
+        <footer></footer>
+        <script src="category.js"></script>
+</body>
+
+</html>

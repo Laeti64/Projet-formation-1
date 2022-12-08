@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#topCategoryImg {
+    position: relative;
+    z-index: 10;
+}
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+/* .travelTop {
+    display: flex;
+    justify-content: space-between;
+} */
+.travelPrice p {
+    float: right;
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+#categoryImgBody {
+    opacity: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#categoryBody {
+    width: 100%;
+    margin: auto;
+    font-family: "Sorts Mill Goudy", sans-serif;
+
+}
+
+.travelContainer {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: clamp(0.8rem, 2vw, 2.3rem);
+}
+
+
+.travelDescription,
+.travelActivities,
+.travelServices {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*////////////////////////////////////////////////////////1er carrousel*/
+
+.carousel-container {
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 5%
+}
+
+.inner-carousel {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.track {
+    width: 150%;
+    display: inline-flex;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-container {
+    width: 32%;
+    height: 150px;
+    /* flex-shrink: 0; */
+    /* padding-right: 5px; */
+    padding-right: 8px;
+}
+
+.card .cardTitle {
+    position: absolute;
+    top: 70%;
+    margin-left: 1%;
+    color: white;
+    -webkit-text-stroke: 0.1px black;
+    font-size: 2em;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-position: center bottom;
+    background-size: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: 275px 150px;
+
+}
+
+.card1 {
+    background-image: url("images/Zen/BoraBora/BBVoyage.webp");
+}
+
+.card2 {
+    background-image: url("images/Zen/Japon/japonVoyage.jpg");
+}
+
+.card3 {
+    background-image: url("images/Zen/Seychelles/seychellesVoyage.webp");
+}
+
+.card4 {
+    background-image: url("images/Zen/Thailande/thaiVoyage.webp");
+}
+
+.nav button {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-20%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav .prev {
+    left: -30px;
+    display: none;
+}
+
+.nav .prev.show {
+    display: block;
+    border: none;
+    background: none;
+}
+
+.nav .next {
+    right: -2px;
+    border: none;
+    background: none;
+}
+
+.nav .next.hide {
+    display: none;
+}
+
+#left {
+    transform: rotate(180deg);
+}
+
+/*////////////////////////////////////////////////fin 1er carrousel*/
+
+
+/*///////////////////////////////////////////////pour carousel images voyage
+/* Slideshow container */
+.travelImgDiv {
+    max-width: 80%;
+    height: 130px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    height: 130px;
+    margin: 0;
+}
+
+.mySlidesX {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Next & previous buttons */
+.travelPrev,
+.travelNext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.travelNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.travelPrev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.travelPrev:hover,
+.travelNext:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.btn {
+    background: #6b3e6a;
+    background-image: -webkit-linear-gradient(top, #6b3e6a, #b12bb8);
+    background-image: -moz-linear-gradient(top, #6b3e6a, #b12bb8);
+    background-image: -ms-linear-gradient(top, #6b3e6a, #b12bb8);
+    background-image: -o-linear-gradient(top, #6b3e6a, #b12bb8);
+    background-image: linear-gradient(to bottom, #6b3e6a, #b12bb8);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: Georgia;
+    color: #f7def7;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 150px;
+    height: 10%;
+}
+
+.btn:hover {
+    background: #bd2c8f;
+    background-image: -webkit-linear-gradient(top, #bd2c8f, #e815da);
+    background-image: -moz-linear-gradient(top, #bd2c8f, #e815da);
+    background-image: -ms-linear-gradient(top, #bd2c8f, #e815da);
+    background-image: -o-linear-gradient(top, #bd2c8f, #e815da);
+    background-image: linear-gradient(to bottom, #bd2c8f, #e815da);
+    text-decoration: none;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    z-index: 100;
+    position: relative;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .carousel-container {
+        width: 845px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 400px) {
+    .travelImgDiv {
+        width: 305px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .travelContainer {
+        display: flex;
+    }
+
+    .travelImgDiv {
+        display: none;
+    }
+
+    .mySlidesX2 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 20%;
+        border-radius: 5%;
+        box-shadow: 10px 5px 5px gray;
+        opacity: 100%;
+        z-index: 10;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .travelImgDiv2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+
+
+
+    }
+
+    .travelImgDiv2 img:nth-of-type(even) {
+        align-items: flex-end;
+        margin-left: 25%;
+        margin-right: 15px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .travelImgDiv2 {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .card .cardTitle {
+        font-size: 1.2em;
+    }
+}

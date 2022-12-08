@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Sorts+Mill+Goudy&display=swap"
+      rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style-tony.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    
+  </head>
+ 
+  <body>
+    <nav id='menu'>
+      <!-- <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label> -->
+      <ul class="flex-container-center">
+          <li><a href='http://accueil.html'><img class="logo-main" src="./images/Logos/wild.png" alt="logo-wild-travel-agency"></a></li>
+          <div class="logos-container flex-container-center">
+              <li><a href=""><img class="logo-facebook" src="./images/Logos/logoFacebook.png" alt="logo-facebook"></a></li>
+              <li><a href=""><img class="logo-instagram" src="./images/Logos/logoInstagram.png" alt="logo-instagram"></a></li>
+              <li><a href=""><img class="logo-whats-app" src="./images/Logos/whatsapp.png" alt="logo-whats-app"></a></li>
+              <li class="logo-sandwitch"><a class='dropdown-arrow' href='#'><img src="./images/Logos/logo-sandwitch.png" alt="logo-sandwitch"></a>
+              <ul class='sub-menus'>
+                  <li><a href='http://accueil.html'>Accueil</a></li>
+                  <li><a href='#'>Nos catégories de voyages</a></li>
+                  <li><a href='http://contact.html'>Contactez-nous</a></li>
+              </ul>               
+          </div>
+      </ul>
+  </nav>
+  
+ <header>
+
+
+  
+ </header>
+   
+<div class="forms">
+  <div id="contact-form-div" class="form-div contact-form-div">
+        <form class="form">
+          <h1 class="form-title">Détails du client</h1>
+          <br/>
+
+          <label for="first-name">Nom</label><br/>
+          <input
+          class="normal-fields" type="text" id="first-name" name="first-name" required/>
+          <br/>
+          <h3>Adresse:</h3>
+          <label for="apartment-number">Complément d'adresse</label><br />
+          <input class="normal-fields" type="text" id="apartment-number" name="apartment-number"/><br/>
+
+          <label for="street">Rue</label><br/>
+          <input class="normal-fields" type="text" id="street" name="street"/><br/>
+
+          
+            
+              <label for="town">Ville</label><br/>
+              <input class="normal-fields" type="text" id="town" name="town"/><br/>
+            
+            
+              <label for="postcode">Code Postal</label><br/>
+              <input class="normal-fields" type="text" id="postcode" name="postcode"/><br/>
+            
+          
+          <label for="email">email</label><br/>
+          <input class="normal-fields" type="email" id="email" name="email"/><br/>
+
+          <label for="phone">Téléphone</label><br/>
+          <input class="normal-fields" type="text" id="phone" name="phone"/><br/>
+          <br>
+        
+   </div>
+
+  <div id="voyage-form-div" class="form-div voyage-form-div">
+        
+          <h1 class="form-title">Détails de voyage</h1>
+          <label for="category">Catégorie</label><br/>
+          <input class="normal-fields" type="text" id="category" name="category"/><br/>
+          
+            
+              <label for="arrival">Date d'arrivée</label><br/>
+              <input class="normal-fields" type="date" id="arrival" name="arrival"/>
+              <br/>
+            
+            
+              <label for="number-people">Nombre de personnes</label><br/>
+              <select id="number-people" class="normal-fields" name="number-people">
+               
+              </select>
+              <br/>
+            
+          
+          
+            
+              <label for="number-nights">Nombre de nuits</label><br/>
+              <select id="number-nights" class="normal-fields" name="number-nights">
+              </select>
+              <br/>
+            
+            
+              <label for="week-number">Numéro de semaine</label><br/>
+              <select id="week-number" class="normal-fields" name="week-number">
+             </select>
+              <br/>
+              <br/>
+            
+          <h3>Détails de carte <iconify-icon icon="logos:visaelectron"></iconify-icon>
+          <iconify-icon icon="logos:mastercard"></iconify-icon>
+          <iconify-icon icon="fontisto:american-express"></iconify-icon>
+          </h3>
+          <input type="text" class="normal-fields" id="card-name" name="card-name" placeholder="Nom du détenteur"/>
+          <br/>
+          <br/>
+        <input type="text" class="normal-fields" id="card-number" name="card-number" placeholder="Numéro de carte"/>
+          <br/>
+          <br/>
+     <div class="exp-cvc">
+        <div id="exp-date">
+            <label for="exp-date-month">A fin:</label>
+            <select id="exp-date-month" name="exp-date-month">
+              <option value = 1>01</option>
+              <option value = 2>02</option>
+              <option value = 3>03</option>
+              <option value = 4>04</option>
+              <option value = 5>05</option>
+              <option value = 6>06</option>
+              <option value = 7>07</option>
+              <option value = 8>08</option>
+              <option value = 9>09</option>
+              
+            </select>
+
+            <label for="exp-date-year"></label><br/>
+            <select id="exp-date-year" name="exp-date-year">
+               </select>
+        </div>
+            <label for="cv-code">Code cv:</label>
+            <input type="text" id="cv-code" name="cv-code"/><br/><br/>
+          
+      </div>
+        <br>
+      <div class="submit-container">
+            <input type="submit" value="Submit" id="submit-button"/>
+      </div>
+    </div>
+        </form>
+</div>
+    
+  <footer>
+    <ul class="footer-flex-container">
+       <li><p><a class="ml" href="#">Mentiones legales</a></p></li>
+      <li><p><a class="cu" href="#" >Contact us</a></p></li>
+       </ul>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="./formulaire.js"></script>
+  </body>
+</html>
